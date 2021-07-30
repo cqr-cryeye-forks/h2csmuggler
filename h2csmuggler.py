@@ -198,9 +198,9 @@ def main(args):
     if not success:
         sys.exit(1)
 
-    print("[INFO] h2c stream established successfully.")
+#     print("[INFO] h2c stream established successfully.")
     if args.test:
-        print("[INFO] Success! " + args.proxy + " can be used for tunneling")
+        print("[SUCCESS] Can be used for tunneling: " + args.proxy)
         sys.exit(0)
 
     # Step 5: Immediately send the pending HTTP/2 data.
